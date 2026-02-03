@@ -47,7 +47,9 @@ noButton.addEventListener("click", () => {
 });
 
 const capybaraGifUrl =
-  "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDkxM2V1dTRuanEzZ3BpNW1odHhwZzMwZzdoZGpwaG1kNjdhd2hobSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dQLtlj7f2OhpiRObb3/giphy.gif";
+  "https://media.giphy.com/media/dQLtlj7f2OhpiRObb3/giphy.gif";
+
+capybaraGif.src = capybaraGifUrl;
 
 const releaseConfetti = () => {
   confetti.innerHTML = "";
@@ -67,7 +69,6 @@ yesButton.addEventListener("click", () => {
   growYes();
   response.textContent = "Yay! 💖";
   celebration.classList.add("active");
-  capybaraGif.src = capybaraGifUrl;
   releaseConfetti();
 });
 

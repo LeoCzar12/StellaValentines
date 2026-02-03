@@ -104,6 +104,8 @@ h1 {
   width: min(220px, 60vw);
   display: block;
   margin: 0 auto;
+  max-height: 180px;
+  object-fit: contain;
   filter: drop-shadow(0 12px 24px rgba(255, 117, 140, 0.25));
   animation: capyHop 2.2s ease-in-out infinite;
 }
