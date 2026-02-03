@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be My Valentine?</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card" aria-live="polite">
+        <h1>Are you going to be my valentine?</h1>
+        <p class="subtitle">Choose wisely 💘</p>
+        <div class="button-wrap">
+          <button id="yesButton" class="btn yes" type="button">YES</button>
+          <button id="noButton" class="btn no" type="button">NO</button>
+        </div>
+        <p id="response" class="response" role="status"></p>
+        <div id="celebration" class="celebration" aria-hidden="true">
+          <img id="capybaraGif" class="capybara" alt="Happy capybara" />
+          <div id="confetti" class="confetti" aria-hidden="true"></div>
+        </div>
+      </section>
+      <div class="hearts" aria-hidden="true"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
