@@ -69,6 +69,7 @@ yesButton.addEventListener("click", () => {
   growYes();
   response.textContent = "Yay! 💖";
   celebration.classList.add("active");
+  capybaraGif.src = capybaraGifUrl;
   releaseConfetti();
 });
 
