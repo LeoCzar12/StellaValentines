@@ -46,38 +46,8 @@ noButton.addEventListener("click", () => {
   response.textContent = "Nuh-uh, nice try!";
 });
 
-const capybaraSvg = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180">
-  <rect width="240" height="180" fill="none"/>
-  <g>
-    <ellipse cx="120" cy="110" rx="70" ry="45" fill="#c98f5a"/>
-    <ellipse cx="65" cy="95" rx="30" ry="26" fill="#d8a36f"/>
-    <ellipse cx="175" cy="95" rx="30" ry="26" fill="#d8a36f"/>
-    <ellipse cx="120" cy="70" rx="55" ry="40" fill="#d8a36f"/>
-    <ellipse cx="95" cy="70" rx="10" ry="8" fill="#3d2b20"/>
-    <ellipse cx="145" cy="70" rx="10" ry="8" fill="#3d2b20"/>
-    <circle cx="92" cy="68" r="3" fill="#ffffff"/>
-    <circle cx="142" cy="68" r="3" fill="#ffffff"/>
-    <path d="M105 90 Q120 102 135 90" fill="none" stroke="#3d2b20" stroke-width="6" stroke-linecap="round"/>
-    <circle cx="88" cy="92" r="6" fill="#ff9bb8"/>
-    <circle cx="152" cy="92" r="6" fill="#ff9bb8"/>
-    <rect x="80" y="120" width="25" height="18" rx="6" fill="#b97a46"/>
-    <rect x="135" y="120" width="25" height="18" rx="6" fill="#b97a46"/>
-  </g>
-  <g>
-    <circle cx="190" cy="45" r="6" fill="#ff7eb3">
-      <animate attributeName="cy" values="45;40;45" dur="1.6s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="200" cy="60" r="5" fill="#ff758c">
-      <animate attributeName="cy" values="60;54;60" dur="1.8s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="178" cy="62" r="4" fill="#ff9bb8">
-      <animate attributeName="cy" values="62;58;62" dur="1.4s" repeatCount="indefinite" />
-    </circle>
-  </g>
-</svg>`;
-
-capybaraGif.src = `data:image/svg+xml;utf8,${encodeURIComponent(capybaraSvg)}`;
+const capybaraGifUrl =
+  "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDkxM2V1dTRuanEzZ3BpNW1odHhwZzMwZzdoZGpwaG1kNjdhd2hobSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dQLtlj7f2OhpiRObb3/giphy.gif";
 
 const releaseConfetti = () => {
   confetti.innerHTML = "";
@@ -97,6 +67,7 @@ yesButton.addEventListener("click", () => {
   growYes();
   response.textContent = "Yay! 💖";
   celebration.classList.add("active");
+  capybaraGif.src = capybaraGifUrl;
   releaseConfetti();
 });
 
